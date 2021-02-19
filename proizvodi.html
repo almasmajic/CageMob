@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proizvodi</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stil.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140828810-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140828810-1');
+    </script>
+</head>
+<body>
+    <div class="container">
+    <header class="jumbotron">
+    <h1 class="display-4"><strong>The Cage-Mob VS.</strong></h1>
+    </header>
+    
+        <nav class="navbar navbar-expand-lg navbar-light" class="col-sm-3 col-md-6">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+                </a>
+            </nav>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="logo" style="width:60px;height:60px;">
+                </a>
+                <ul class="navbar-nav mr-auto">
+                  
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Naslovna</a>
+                  </li>
+                  
+                  <li class="nav-item active">
+                    <a class="nav-link" href="o_nama.html">O nama</a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="proizvodi.html">Proizvodi</a>
+                  </li>
+                
+                  <li class="nav-item active">
+                    <a class="nav-link" href="sponzori.html">Sponzori</a>
+                  </li>
+                
+                </ul>
+              
+            
+          </div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+                <div id="id01" class="modal">
+
+                  <form class="modal-content animate" action="/action_page.php">
+
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+        </nav>
+        
+        
+        <section class="bg-light">
+            <div class="media-container-row">
+                <h1 class="display-4">Proizvodi</h1>
+                <p class="lead">Trenutačna ponuda:</p>
+
+            <div class="row">
+                
+                  <div class="card">
+                      <div id="demo" class="carousel slide" data-ride="carousel">
+                      <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"><h1>BLue</h1></li>
+                        <li data-target="#demo" data-slide-to="1" class="active"></li>
+                        <li data-target="#demo" data-slide-to="2" class="active"></li>
+                        <li data-target="#demo" data-slide-to="3" class="active"></li>
+                      </ul>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="shop-item-image" src="cagemob_red.jpeg" alt="Crveni Cage-mob" style="width:100%">
+                            <span class="shop-item-title">Red</span>
+                              <span class="shop-item-price">HRK 80</span>
+                              <p>Prototip Cage-moba(crveni)</p>
+                                   <div class="row">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                   </div>
+                              <p><button class="btn btn-primary shop-item-button" type="button">Dodaj u košaricu</button></p>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="shop-item-image" src="cagemob_blue.jpeg" alt="Plavi Cage-Mob" style="width:100%">
+                            <span class="shop-item-title">Blue</span>
+                              <span class="shop-item-price">HRK 80</span>
+                              <p>Prototip Cage-moba(plavi)</p>
+                                   <div class="row">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                   </div>
+                              <p><button class="btn btn-primary shop-item-button" type="button">Dodaj u košaricu</button></p>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="shop-item-image" src="cagemob_green.jpeg" alt="Zeleni Cage-Mob" style="width:100%">
+                            <span class="shop-item-title">Green</span>
+                              <span class="shop-item-price">HRK 80</span>
+                              <p>Prototip Cage-moba(zeleni)</p>
+                                   <div class="row">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                   </div>
+                              <p><button class="btn btn-primary shop-item-button" type="button">Dodaj u košaricu</button></p>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="shop-item-image" src="cagemob_purple.jpeg" alt="Ljubičasti Cage-mob" style="width:100%">
+                            <span class="shop-item-title">Purple</span>
+                              <span class="shop-item-price">HRK 80</span>
+                              <p>Prototip Cage-moba(ljubičasti)</p>
+                                   <div class="row">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                   </div>
+                              <p><button class="btn btn-primary shop-item-button" type="button">Dodaj u košaricu</button></p>
+                        </div>
+                      </div>
+                          <div class="carousel-control">
+                          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </a>
+                          <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </a>
+                              </div>
+                      </div>
+                </div>
+                  <div class="card">
+                    <img class="shop-item-image" src="cagemob_digital.jpeg" alt="Cage-mob brojac" style="width:100%">
+                      <span class="shop-item-title">Digital</span>
+                  <span class="shop-item-price">HRK 150</span>
+                  <p>Cage-mob sa digitalnim brojačem</p>
+                      <div class="row">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                    <p><button class="btn btn-primary shop-item-button" type="button">Dodaj u košaricu</button></p>
+                  </div>
+                 
+            </div>
+            <div class="row">
+                
+                  <div class="card">
+                      <img class="shop-item-image" src="cagemob_metal.jpeg" alt="Cage-mob metalni" style="width:100%">
+                      <span class="shop-item-title">Metal edition</span>
+                      <span class="shop-item-price">HRK 120</span>
+                      <p>Cage-mob sa metalnim dizajnom</p>
+                      <div class="row">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                      </div>
+                      <p><button class="btn btn-primary shop-item-button" type="button">Dodaj u košaricu</button></p>
+                      </div>
+                    
+                 
+                
+                  <div class="card">
+                    <img class="shop-item-image" src="cagemob_zlatan.jpeg" alt="Cage-mob zlatni" style="width:100%">
+                  <span class="shop-item-title">"Zlatan"</span>
+                  <span class="shop-item-price">HRK 1000</span>
+                  <p>Cage-mob sa zlatnim dizajnom</p>
+                      <div class="row">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                    <p><button class="btn btn-primary shop-item-button"type="button">Dodaj u košaricu</button></p>
+                  </div>
+                 
+            </div>
+                <section class="container content-section">
+                        <h2 class="section-header">KOŠARICA</h2>
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Odabrani modeli</span>
+                                <span class="cart-price cart-header cart-column">Cijena</span>
+                                <span class="cart-quantity cart-header cart-column">Količina</span>
+                            </div>
+                            <div class="cart-items">
+                                </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span class="cart-total-price">HRK 0</span>
+                        </div>
+                        <button class="btn btn-primary btn-purchase" type="button">Kupovina</button>
+                    </section>
+                
+            </div>
+
+        </section>
+        <script src="javascr.js" async></script>
+        <footer id="footer">
+            <div class="footer-top">
+             <div class="container">
+              <div class="row">
+                 <div class="col-lg-3 col-md-6 footer-info">
+                    <h3>Cage-Mob</h3>
+                        <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="logo" style="width:60px;">
+                        </a>
+                 </div>
+                 <div class="col-lg-3 col-md-6 footer-links">
+                     <h3>Korisni linkovi</h3>
+                 <ul>
+                     <li><a href="index.html">Naslovna</a></li>
+                     <li><a href="o_nama.html">O nama</a></li> 
+                     <li><a href="proizvodi.html">Trgovina</a></li> 
+                     <li><a href="sponzori.html">Sponzori</a></li> 
+                 </ul>
+                 </div>
+                  <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Pratite nas</h3>
+                      <a href="https://www.facebook.com/Cage-Mob-1023451257865067/" class="facebook" target="_blank"><i class="fa fa-facebook-official" style="font-size:48px;color:red"></i></a>
+                      <a href="https://www.instagram.com/cagemob_fipu/" class="instagram" target="_blank"><i class="fa fa-instagram" style="font-size:48px;color:red"></i></a>
+                      <a href="https://www.youtube.com/" class="youtube" target="_blank"><i class="fa fa-youtube" style="font-size:48px;color:red"></i></a>
+                  
+                  </div>
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Pretplati se">
+                        </form>
+                  
+                  
+                  
+                    </div>
+                 </div>    
+                </div>
+            
+            </div>
+        <p class="copyright text-muted">Copyright &copy; CageMob 2019.</p>
+        </footer>
+
+
+        
+    </div>
+    
+      <script src="javascr.js"></script>
+    <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+
+
+
+</html>
